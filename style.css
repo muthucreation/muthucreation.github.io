@@ -1,4 +1,4 @@
-.coming{position: relative; background:url(images/bg.png);background-size: 100% auto; height: 100vh;}
+.coming{position: relative; background:url(images/bg.png);background-size: cover; height: 100%}
 
 .coming .logo{ text-align: center;}
 
@@ -6,12 +6,29 @@
 
 .coming h3{ 
 	font-family: 'Signika', sans-serif;
-	font-size: 70px;
-	padding: 20px;
-	font-weight: 400;
+	font-size: 50px;
+	padding: 30px;
+	font-weight: 600;
 	letter-spacing: 3px;
 	color: #000;
 }
 
-
+.coming a{ 
+	font-family: 'Signika', sans-serif;
+	font-size: 40px;
+	padding: 20px 30px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	color: #fff;
+	background: #39A4DC;
+	border-radius: 10px;
+	text-decoration: none;
+}
+.coming a:hover{ 
+	
+	
+	color: #39A4DC;
+	background: #fff;
+	
+}
 
