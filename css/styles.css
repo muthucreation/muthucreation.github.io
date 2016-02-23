@@ -1,0 +1,367 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+body{
+	position:relative;
+	overflow-x:hidden;
+}
+/** UTILS **/
+.table{
+	display:table;
+	width:100%;
+	height:100%;
+}
+.table-cell{
+	display:table-cell;
+	vertical-align:middle;
+}
+.section-full{
+	width:100%;
+	height:100vh;
+}
+section{
+	width:100%;
+}
+.m-top-bot-40{
+	margin:40px auto !important;
+}
+
+/** FIXED HEADER **/
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.65);
+    padding: 40px 50px;
+	font-family:'Nunito', sans-serif;
+	z-index:99999;
+	height:100%;
+}
+
+.menu{
+	color:#fff;
+	padding-top:40px;
+	font-size:20px;
+}
+.menu ul{
+	list-style:none;
+}
+.menu ul li{
+	padding:10px 0;
+}
+.menu ul li a{
+	color:#fff;
+	text-decoration:none;
+}
+.menu ul li a:hover{
+	color:#FFCD05;
+}
+.header.is-sticky{
+	width:100%;
+	height:auto;
+	padding:10px 10%;
+}
+.header.is-sticky .logo,.header.is-sticky .menu,.header.is-sticky .menu ul li{
+	display:inline-block;
+}
+.header.is-sticky .logo{
+	float:left;
+}
+.header.is-sticky .logo img{
+	width:60%;
+}
+.header.is-sticky .menu ul li{
+	padding:20px	;
+}
+.header.is-sticky .menu{
+	padding:0 20px;
+	width:90%;
+	text-align:center;
+}
+.item img{
+	height:auto;
+	display:block;
+}
+
+.home{
+	background:url("../img/home-page.png") no-repeat;
+	background-size:100% 100%;
+	text-align:center;
+}
+.my-name{
+	color:#fff;
+	font-family:'Nunito', sans-serif;
+	font-size:80px;
+	margin-bottom:30px;
+}
+.my-profession{
+	color:#FFCD05;
+	font-family:'Signika', sans-serif;
+	font-size:65px;
+	font-weight:600;
+	text-transform:uppercase;
+}
+.scroll-down{
+	display:block;
+	margin-top:2%;
+}
+.my-quote{
+	font-family:'Signika', sans-serif;
+	height:40vh;
+	font-size:48px;
+	padding:50px 0;
+	text-align:center;
+}
+.my-design-areas{
+	height:59vh;
+}
+.corporate-and-mobile,.web-and-visual{
+	width:50%;
+	height:100%;
+	float:left;
+	position:relative;
+	font-family:'Nunito', sans-serif;
+}
+.corporate-and-mobile{
+	background:url("../img/corporate-mobile-bg.png") no-repeat;
+	background-size:100% 100%;
+}
+.web-and-visual{
+	background:url("../img/web-visual-bg.png") no-repeat;
+	background-size:100% 100%;
+}
+.corporate-and-mobile .corporate,.corporate-and-mobile .mobile,.web-and-visual .web,.web-and-visual .visual{
+	color:#fff;
+	position:absolute;
+	font-size:38px;
+}
+.corporate-and-mobile .corporate{
+	left:15px;
+	bottom:15px;
+}
+.web-and-visual .web{
+	top:15px;
+	left:15px;
+}
+.corporate-and-mobile .mobile{
+	right:15px;
+	top:15px;
+}
+.web-and-visual .visual{
+	bottom:15px;
+	right:15px;
+}
+.what-i-do{
+	background:url("../img/bg.png") no-repeat;
+	background-size:100% 100%;
+	padding:50px 0;
+}
+.owl-carousel{
+	margin:0 auto;
+	width:600px !important;
+}
+.owl-controls{
+	position:absolute;
+	top:40%;
+	width:100%;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev,.owl-controls .owl-buttons .owl-next{
+	position:absolute;
+	text-indent:-9999px;
+	width:112px;
+	height:100px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+	background:url("../img/prev.png") no-repeat;
+	left:-100px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next{
+	background:url("../img/next.png") no-repeat;
+	right:-100px;
+}
+.item h3{
+	color:#fff;
+	font-family:'Nunito', sans-serif;
+	font-size:50px;
+	font-weight:normal;
+	padding:40px 0;
+	width:100%;
+	text-align:center;
+}
+.item img{
+	margin:0 auto;
+}
+.works-wrapper{
+	width:75%;
+	margin:0 auto;
+}
+.work{
+	width:23%;
+	float:left;
+	height:300px;
+	margin:15px 1%;
+	box-sizing:border-box;
+	position:relative;
+	text-align:center;
+	overflow:hidden;
+	transition:all .10s linear;
+}
+.work img{
+	width:100%;
+	height:100%;
+}
+.my-work-name{
+	background:#FFCD05;
+	font-family:'Nunito', sans-serif;
+	color:#000;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+}
+.work-overlay{
+	display:none;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background:rgba(0,0,0,0.7);
+}
+.work-name-overlay{
+	font-family:'Nunito', sans-serif;
+	font-size:26px;
+	color:#fff;
+}
+.work-icon{
+	width:50px;
+	margin:0 auto;
+	display:block;
+}
+.work:hover .work-overlay{
+	display:block;
+}
+.work:hover .my-work-name{
+	bottom:-50px;
+}
+.get-in-touch{
+	position:relative;
+}
+.my-home-map{
+	box-shadow:2px 2px 10px;	
+}
+.my-contacts{
+	text-align:center;
+	width:100%;
+	margin:40px 0;
+}
+.contact {
+	border-radius:10px;
+	color:#fff;
+	font-family:'Nunito', sans-serif;
+    width: 22%;
+    display: inline-block;
+    margin: 0 5%;
+	padding:20px;
+}
+.contact-title{
+	font-size:26px;
+	padding:5px 0;
+}
+.contact.address{
+	background:#EF4538;
+}
+.contact.phone{
+	background:#39A4DC;
+}
+.contact.email{
+	background:#FFCD05;
+}
+.contact a,.contact address{
+	color:#fff;
+	text-decoration:none;
+	font-size:24px;
+	padding:5px 0;
+}
+.overlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+.modal-wrapper .modal {
+  width: 90%;
+  height: auto;
+  position: relative;
+  top: 80px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 11;
+  /* 1px higher than the overlay layer */
+  display:block;
+  transition: all 1s linear;
+}
+.modal-wrapper .modal img{
+	width:100%;
+}
+.modal-open{
+	overflow:hidden;
+}
+.modal-open .modal-wrapper{
+	display:block;
+}
+.modal-open .overlay{
+	display:block;
+}	
+.work-screen .work-detail{
+	padding: 10px;
+    font-family: 'nunito';
+}
+.modal-wrapper .modal .close-modal {
+    position: absolute;
+    right: -30px;
+    color: white;
+    font-size: 36px;
+    top: -30PX;
+    cursor: pointer;
+	font-family:'nunito';
+}
+.modal-wrapper .modal .close-modal:hover{
+	color:#FFCD05;
+}
+.nav-btn{
+	cursor:pointer;
+	display:none;
+	background:none;
+	border:0;
+}
+.nav-btn .icon-bar{
+	background:#fff;
+	border-radius:3px;
+	display:block;
+	width:35px;
+	height:4px;
+}
+.nav-btn .icon-bar + .icon-bar{
+	margin-top:5px;
+}
