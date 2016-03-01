@@ -45,21 +45,14 @@ $(document).ready(function() {
 			});
 			
 			
-		});
-		
-		$(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        var screen_width = $(window).width();
+			$(".main").onepage_scroll({
+				easing:"ease-in-out"
+				
+			});
+			
+			
+			
+			
 
-        if(screen_width >= 768)
-        {
-        if(scroll > 400)
-        {
-            $(".header").addClass("is-sticky");
-        }
-        else
-        {
-            $(".header").removeClass("is-sticky")
-        }
-        }
-        });
+});
+		
