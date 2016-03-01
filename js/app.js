@@ -14,11 +14,10 @@ $(document).ready(function() {
 			
 	$("#work-1").click(function(){
 		$("body").addClass("modal-open");
+		
 	});
 			
-			$(".open-popup").click(function(){	
-				$(".header").css("display","none");
-			});
+			
 			
 			$(".close-modal").click(function(){
 				$("body").removeClass("modal-open");
@@ -44,15 +43,22 @@ $(document).ready(function() {
 				$(".menu").slideToggle();
 			});
 			
-			
-			$(".main").onepage_scroll({
-				easing:"ease-in-out"
-				
-			});
-			
-			
-			
-			
-
-});
 		
+	
+			 $(".main").onepage_scroll({
+				beforeMove: function(index) {
+					if($("body").hasClass("viewing-page-1") == false){
+						$(".header").addClass("is-sticky")
+					}
+					else{
+						$(".header").removeClass("is-sticky")
+					}
+				}
+			});
+			 
+			 
+			$(".open-popup").click(function(){	
+				$(".header").css("display","none");
+				 $(".main").disabled(); 
+			});			
+});
