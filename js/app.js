@@ -19,9 +19,6 @@ $(document).ready(function() {
 			
 			
 			
-			$(".close-modal").click(function(){
-				$("body").removeClass("modal-open");
-			});
 			$(document).on('keyup',function(evt){
 				if ((evt.keyCode == 27) && ($("body").hasClass("modal-open"))){
 				$("body").removeClass("modal-open");
@@ -55,10 +52,22 @@ $(document).ready(function() {
 					}
 				}
 			});
+			
+
+			$(".open-popup").click(function(){
+				$("body").addClass("disabled-onepage-scroll");
+				$("header").css("display","none");
+			});
+			
+			
+			$(".close-modal").click(function(){
+				$("body").removeClass("modal-open");
+				$("body").removeClass("disabled-onepage-scroll");
+				$("header").css("display","block");
+			});
+						
+			
+			
 			 
 			 
-			$(".open-popup").click(function(){	
-				$(".header").css("display","none");
-				 $(".main").disabled(); 
-			});			
 });
