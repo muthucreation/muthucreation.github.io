@@ -327,9 +327,7 @@ section{
 .modal-open{
 	overflow:hidden;
 }
-.modal-open .modal-wrapper{
-	display:block;
-}
+
 .modal-open .overlay{
 	display:block;
 }	
