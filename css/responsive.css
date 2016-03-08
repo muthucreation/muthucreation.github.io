@@ -1,5 +1,6 @@
 @media only screen and (max-width:767px){
-	.header{
+	.header,.header.is-sticky{
+		background:rgba(0,0,0,0.95);
 		width:100%;
 		height:auto;
 		padding:10px 20px;
@@ -18,6 +19,15 @@
 		display:inline-block;
 		padding:20px 10px;
 		float:right;
+	}
+	.header.is-sticky .menu{
+		width:100%;
+		text-align:left;
+		padding:0;
+	}
+	.header.is-sticky .menu li{
+		display:block;
+		padding:10px 0;
 	}
 	.my-name{
 		font-size:40px;

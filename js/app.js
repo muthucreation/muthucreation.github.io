@@ -44,7 +44,7 @@ $(document).ready(function() {
 			});
 			
 		
-	
+			 
 			 $(".main").onepage_scroll({
 				beforeMove: function(index) {
 					if($("body").hasClass("viewing-page-1") == false){
@@ -55,6 +55,7 @@ $(document).ready(function() {
 					}
 				}
 			});
+			
 			
 
 			$(".open-popup").click(function(){
